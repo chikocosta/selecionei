@@ -14,7 +14,7 @@ import json
 import time
 
 app = Flask(__name__, static_folder=os.path.join(os.path.dirname(__file__), 'static'))
-app.config['SECRET_KEY'] = 'selecionei_secret_key_2024'
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'selecionei_secret_key_2024')
 CORS(app)
 
 app.register_blueprint(user_bp, url_prefix='/api')

@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Input } from '@/components/ui/input.jsx'
 import { Label } from '@/components/ui/label.jsx'
 import { Textarea } from '@/components/ui/textarea.jsx'
-import { Upload, FileText, Search, Star, TrendingUp, Users, Clock, CheckCircle, X, Phone, Mail, Award, LogIn, UserPlus, CreditCard, BarChart3, Settings, LogOut, Menu, ChevronDown, AlertCircle, Loader2 } from 'lucide-react'
+import { Upload, FileText, Search, Star, TrendingUp, Users, Clock, CheckCircle, X, Phone, Mail, Award, LogIn, UserPlus, CreditCard, BarChart3, Settings, LogOut, Menu, ChevronDown, AlertCircle, Loader2, Facebook, Linkedin, Instagram } from 'lucide-react'
 import selecioneiLogo from './assets/selecionei-logo.png'
 import './App.css'
 
@@ -309,7 +309,7 @@ function App() {
             <img src={selecioneiLogo} alt="Selecionei" className="h-10 w-auto mr-3" />
             <div>
               <h1 className="text-2xl font-bold text-gray-900">Selecionei</h1>
-              <p className="text-sm text-gray-600">Seleção Inteligente</p>
+              <p className="text-sm text-gray-600">Análise Automática de Currículos</p>
             </div>
           </div>
 
@@ -494,9 +494,8 @@ function App() {
               >
                 Começar Agora - É Grátis! 🚀
               </Button>
-              <Button 
-                variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 text-lg"
+              <Button
+                className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-3 text-lg"
                 onClick={() => setCurrentPage('analyze')}
               >
                 Ver Demonstração
@@ -978,6 +977,17 @@ function App() {
                 <div className="flex items-center">
                   <Phone className="h-4 w-4 mr-2" />
                   <span className="text-sm">WhatsApp: (11) 99999-9999</span>
+                </div>
+                <div className="flex space-x-3 mt-2">
+                  <a href="https://www.facebook.com/selecionei" aria-label="Facebook" className="hover:text-white">
+                    <Facebook className="h-4 w-4" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/selecionei" aria-label="LinkedIn" className="hover:text-white">
+                    <Linkedin className="h-4 w-4" />
+                  </a>
+                  <a href="https://www.instagram.com/selecionei" aria-label="Instagram" className="hover:text-white">
+                    <Instagram className="h-4 w-4" />
+                  </a>
                 </div>
               </div>
             </div>
