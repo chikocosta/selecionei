@@ -494,9 +494,9 @@ function App() {
               >
                 Começar Agora - É Grátis! 🚀
               </Button>
-              <Button 
-                variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 text-lg"
+              <Button
+                variant="outline"
+                className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-3 text-lg"
                 onClick={() => setCurrentPage('analyze')}
               >
                 Ver Demonstração
